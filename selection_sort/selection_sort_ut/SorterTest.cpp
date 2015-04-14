@@ -81,5 +81,33 @@ namespace selection_sort_ut
 				Assert::AreEqual(vec[i], swapped[i]);
 			}
 		}
+
+		TEST_METHOD(sort_test_1)
+		{
+			Sorter s;
+			std::vector<int> input{ 22, 11, 99, 88, 9, 7, 42 };
+			std::vector<int> output{ 7, 9, 11, 22, 42, 88, 99 };
+
+			s.sort(input);
+
+			for (auto i = 0; i < input.size(); ++i)
+			{
+				Assert::AreEqual(input[i], output[i]);
+			}
+		}
+
+		TEST_METHOD(sort_test_2)
+		{
+			Sorter s;
+			std::vector<int> input{ 21, 11, 199, 88, 9, 3, 42 };
+			std::vector<int> output{ 3, 9, 11, 21, 42, 88, 199 };
+
+			s.sort(input);
+
+			for (auto i = 0; i < input.size(); ++i)
+			{
+				Assert::AreEqual(input[i], output[i]);
+			}
+		}
 	};
 }

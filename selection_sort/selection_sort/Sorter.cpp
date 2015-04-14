@@ -26,6 +26,17 @@ int Sorter::index_of_minimum(std::vector<int> list, unsigned int start_index)
 	return min_index;
 }
 
+void Sorter::sort(std::vector<int>& input)
+{
+	auto temp = 0;
+
+	for (auto i = 0; i < input.size(); ++i)
+	{
+		temp = index_of_minimum(input, i);
+		swap(input, i, temp);
+	}
+}
+
 Sorter::Sorter()
 {
 }

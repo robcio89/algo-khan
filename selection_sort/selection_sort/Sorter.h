@@ -9,6 +9,8 @@ public:
 	//template <typename c>
 	int index_of_minimum(std::vector<int> input, unsigned int start_index);
 
+	void sort(std::vector<int>& input);
+
 	Sorter();
 	~Sorter();
 };
