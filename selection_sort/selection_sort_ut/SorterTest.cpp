@@ -41,5 +41,33 @@ namespace selection_sort_ut
 			Assert::AreEqual(3, x);
 		}
 
+		TEST_METHOD(swap_test_1)
+		{
+			Sorter s;
+			std::vector<int> vec{ 7, 9, 4 };
+			std::vector<int> swapped{ 9, 7, 4 };
+
+			s.swap(vec, 0, 1);
+
+			for (auto i = 0; i < vec.size(); ++i)
+			{
+				Assert::AreEqual(vec[i], swapped[i]);
+			}		
+		}
+
+		TEST_METHOD(swap_test_2)
+		{
+			Sorter s;
+			std::vector<int> vec{ 11, 13, 18 };
+			std::vector<int> swapped{ 18, 13, 11 };
+
+			s.swap(vec, 0, 2);
+
+			for (auto i = 0; i < vec.size(); ++i)
+			{
+				Assert::AreEqual(vec[i], swapped[i]);
+			}
+		}
+
 	};
 }

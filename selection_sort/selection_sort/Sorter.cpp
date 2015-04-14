@@ -1,11 +1,11 @@
 #include "Sorter.h"
 
-template <typename c>
-void Sorter::swap(c array, unsigned int first_index, unsigned int second_index)
+//template <typename c>
+void Sorter::swap(std::vector<int>& input, unsigned int first_index, unsigned int second_index)
 {
-	int temp = array[first_index];
-	array[first_index] = array[second_index];
-	array[second_index] = temp;
+	int temp = input[first_index];
+	input[first_index] = input[second_index];
+	input[second_index] = temp;
 }
 
 //template <typename c>
