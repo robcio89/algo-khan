@@ -1,7 +1,6 @@
 #include "stdafx.h"
 #include "CppUnitTest.h"
 #include "../selection_sort/Sorter.h"
-#include <list>
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
@@ -69,5 +68,18 @@ namespace selection_sort_ut
 			}
 		}
 
+		TEST_METHOD(swap_test_3)
+		{
+			Sorter s;
+			std::vector<int> vec{ 15, 10, 13 };
+			std::vector<int> swapped{ 15, 13, 10 };
+
+			s.swap(vec, 1, 2);
+
+			for (auto i = 0; i < vec.size(); ++i)
+			{
+				Assert::AreEqual(vec[i], swapped[i]);
+			}
+		}
 	};
 }
