@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "insertion_sort", "insertion_sort\insertion_sort.vcxproj", "{434237A7-4BEA-49B9-9E05-FE6EFAFA3B86}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "insertion_sort_test", "insertion_sort_test\insertion_sort_test.vcxproj", "{899FF344-16B2-4465-97CB-D327D87C8FBC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -15,6 +17,10 @@ Global
 		{434237A7-4BEA-49B9-9E05-FE6EFAFA3B86}.Debug|Win32.Build.0 = Debug|Win32
 		{434237A7-4BEA-49B9-9E05-FE6EFAFA3B86}.Release|Win32.ActiveCfg = Release|Win32
 		{434237A7-4BEA-49B9-9E05-FE6EFAFA3B86}.Release|Win32.Build.0 = Release|Win32
+		{899FF344-16B2-4465-97CB-D327D87C8FBC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{899FF344-16B2-4465-97CB-D327D87C8FBC}.Debug|Win32.Build.0 = Debug|Win32
+		{899FF344-16B2-4465-97CB-D327D87C8FBC}.Release|Win32.ActiveCfg = Release|Win32
+		{899FF344-16B2-4465-97CB-D327D87C8FBC}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
