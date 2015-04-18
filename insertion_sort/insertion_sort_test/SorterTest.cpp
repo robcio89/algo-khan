@@ -52,5 +52,33 @@ namespace insertion_sort_test
 			}
 		}
 
+		TEST_METHOD(insertion_sort_test_1)
+		{
+			Sorter s;
+			std::vector<int> input{ 22, 11, 99, 88, 9, 7, 42 };
+			std::vector<int> output{ 7, 9, 11, 22, 42, 88, 99 };
+
+			s.insertion_sort(input);
+
+			for (auto i = 0; i < input.size(); ++i)
+			{
+				Assert::AreEqual(input[i], output[i]);
+			}
+		}
+
+		TEST_METHOD(insertion_sort_test_2)
+		{
+			Sorter s;
+			std::vector<int> input{ 92, 11, 99, 88, 9, 7, 42 };
+			std::vector<int> output{ 7, 9, 11, 42, 88, 92, 99 };
+
+			s.insertion_sort(input);
+
+			for (auto i = 0; i < input.size(); ++i)
+			{
+				Assert::AreEqual(input[i], output[i]);
+			}
+		}
+
 	};
 }
