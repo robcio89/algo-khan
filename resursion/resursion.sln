@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2013 for Windows Desktop
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "resursion", "resursion\resursion.vcxproj", "{BAA0C898-190B-4594-BB39-36130CE2F596}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "recursion_test", "recursion_test\recursion_test.vcxproj", "{BBD2EDAB-79FC-4741-A1B1-6D043DE02956}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BAA0C898-190B-4594-BB39-36130CE2F596}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BAA0C898-190B-4594-BB39-36130CE2F596}.Debug|Win32.Build.0 = Debug|Win32
+		{BAA0C898-190B-4594-BB39-36130CE2F596}.Release|Win32.ActiveCfg = Release|Win32
+		{BAA0C898-190B-4594-BB39-36130CE2F596}.Release|Win32.Build.0 = Release|Win32
+		{BBD2EDAB-79FC-4741-A1B1-6D043DE02956}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BBD2EDAB-79FC-4741-A1B1-6D043DE02956}.Debug|Win32.Build.0 = Debug|Win32
+		{BBD2EDAB-79FC-4741-A1B1-6D043DE02956}.Release|Win32.ActiveCfg = Release|Win32
+		{BBD2EDAB-79FC-4741-A1B1-6D043DE02956}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
