@@ -16,15 +16,31 @@ namespace merge_sort_test
 			std::vector<int> input = { 3, 7, 12, 14, 2, 6, 9, 11 };
 			std::vector<int> expected_output = { 2, 3, 6, 7, 9, 11, 12, 14 };
 
-			int mid = (0 + input.size() - 1) / 2;
+			auto mid = floor((0 + input.size() - 1) / 2);
 
 			MergeSort m;
 			m.merge(input, 0, mid, input.size() - 1);
 
-			/*for (auto i = 0; i < 2; ++i)
+			for (auto i = 0; i < 2; ++i)
 			{
 				Assert::AreEqual(input[i], expected_output[i]);
-			}*/
+			}
+		}
+
+		TEST_METHOD(merge_test_2)
+		{
+			std::vector<int> input = { 3, 7, 12, 14, 2, 6, 9, 10 };
+			std::vector<int> expected_output = { 2, 3, 6, 7, 9, 10, 12, 14 };
+
+			auto mid = floor((0 + input.size() - 1) / 2);
+
+			MergeSort m;
+			m.merge(input, 0, mid, input.size() - 1);
+
+			for (auto i = 0; i < 2; ++i)
+			{
+				Assert::AreEqual(input[i], expected_output[i]);
+			}
 		}
 
 	};

@@ -2,20 +2,20 @@
 
 void MergeSort::merge(std::vector<int>& vec, int p, int q, int r)
 {
-	std::vector<int> lowHalf{};
-	std::vector<int> highHalf{};
+	std::vector<int> lowHalf;
+	std::vector<int> highHalf;
 
 	int k = p;
 	int i, j;
 
-	for (i = 0; k <= q; ++i, ++k)
+	for (i = 0; k <= q; i++, k++)
 	{
-		lowHalf[i] = vec[k];
+		lowHalf.push_back(vec[k]);
 	}
 
 	for (j = 0; k <= r; ++j, ++k)
 	{
-		highHalf[j] = vec[k];
+		highHalf.push_back(vec[k]);
 	}
 
 	k = p;
