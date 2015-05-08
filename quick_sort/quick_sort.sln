@@ -5,6 +5,11 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "quick_sort", "quick_sort\quick_sort.vcxproj", "{47B0A341-3182-4D90-A193-23F2990A1B9C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "quick_sort_test", "quick_sort_test\quick_sort_test.vcxproj", "{9F5979AD-CD35-4C5F-8264-8699C0D853B3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{47B0A341-3182-4D90-A193-23F2990A1B9C} = {47B0A341-3182-4D90-A193-23F2990A1B9C}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -15,6 +20,10 @@ Global
 		{47B0A341-3182-4D90-A193-23F2990A1B9C}.Debug|Win32.Build.0 = Debug|Win32
 		{47B0A341-3182-4D90-A193-23F2990A1B9C}.Release|Win32.ActiveCfg = Release|Win32
 		{47B0A341-3182-4D90-A193-23F2990A1B9C}.Release|Win32.Build.0 = Release|Win32
+		{9F5979AD-CD35-4C5F-8264-8699C0D853B3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9F5979AD-CD35-4C5F-8264-8699C0D853B3}.Debug|Win32.Build.0 = Debug|Win32
+		{9F5979AD-CD35-4C5F-8264-8699C0D853B3}.Release|Win32.ActiveCfg = Release|Win32
+		{9F5979AD-CD35-4C5F-8264-8699C0D853B3}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
