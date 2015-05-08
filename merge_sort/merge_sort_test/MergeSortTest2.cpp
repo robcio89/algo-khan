@@ -67,5 +67,18 @@ namespace merge_sort_test
 			}
 		}
 
+		TEST_METHOD(merge_sort_test_5)
+		{
+			std::vector<int> input = { 34, 7, 3, 12, 9, -999, 11, 6, -3 };
+			std::vector<int> expected_output = { -999, -3, 3, 6, 7, 9, 11, 12, 34 };
+
+			MergeSort m;
+			m.merge_sort(input, 0, input.size() - 1);
+
+			for (auto i = 0; i < input.size(); ++i)
+			{
+				Assert::AreEqual(input[i], expected_output[i]);
+			}
+		}
 	};
 }
