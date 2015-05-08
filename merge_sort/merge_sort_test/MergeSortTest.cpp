@@ -21,7 +21,7 @@ namespace merge_sort_test
 			MergeSort m;
 			m.merge(input, 0, mid, input.size() - 1);
 
-			for (auto i = 0; i < 2; ++i)
+			for (auto i = 0; i < input.size(); ++i)
 			{
 				Assert::AreEqual(input[i], expected_output[i]);
 			}
@@ -37,7 +37,7 @@ namespace merge_sort_test
 			MergeSort m;
 			m.merge(input, 0, mid, input.size() - 1);
 
-			for (auto i = 0; i < 2; ++i)
+			for (auto i = 0; i < input.size(); ++i)
 			{
 				Assert::AreEqual(input[i], expected_output[i]);
 			}
@@ -53,7 +53,7 @@ namespace merge_sort_test
 			MergeSort m;
 			m.merge(input, 0, mid, input.size() - 1);
 
-			for (auto i = 0; i < 2; ++i)
+			for (auto i = 0; i < input.size(); ++i)
 			{
 				Assert::AreEqual(input[i], expected_output[i]);
 			}
@@ -69,7 +69,7 @@ namespace merge_sort_test
 			MergeSort m;
 			m.merge(input, 0, mid, input.size() - 1);
 
-			for (auto i = 0; i < 2; ++i)
+			for (auto i = 0; i < input.size(); ++i)
 			{
 				Assert::AreEqual(input[i], expected_output[i]);
 			}
@@ -85,7 +85,7 @@ namespace merge_sort_test
 			MergeSort m;
 			m.merge(input, 0, mid, input.size() - 1);
 
-			for (auto i = 0; i < 2; ++i)
+			for (auto i = 0; i < input.size(); ++i)
 			{
 				Assert::AreEqual(input[i], expected_output[i]);
 			}

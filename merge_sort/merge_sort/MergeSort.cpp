@@ -62,6 +62,17 @@ void MergeSort::merge(std::vector<int>& vec, int p, int q, int r)
 
 }
 
+void MergeSort::merge_sort(std::vector<int>& vec, int p, int r)
+{
+	if (p < r)
+	{
+		auto q = floor((p + r) / 2);
+		merge_sort(vec, p, q);
+		merge_sort(vec, q + 1, r);
+		merge(vec, p, q, r);
+	}
+}
+
 MergeSort::MergeSort()
 {
 }
